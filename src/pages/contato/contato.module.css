@@ -1,0 +1,45 @@
+.contatoContainer {
+    min-height: 100vh;
+    background-image: url('../../../public//assets/tesouras.jpg') ;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.contatoContainer section {
+    min-height: calc(100vh - 134px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contatoContainer section form {
+    background-color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 450px;
+    min-height: 350px;
+    justify-content: space-evenly;
+}
+
+.contatoContainer section form button {
+    margin-top: 2rem;
+}
+
+@media (max-width: 415px) {
+    .contatoContainer section {
+        padding: .2rem;
+        min-height: calc(100vh - 126px);
+    }
+
+    .contatoContainer section form {
+        min-height: 480px;
+        width: 90%;
+    }
+}

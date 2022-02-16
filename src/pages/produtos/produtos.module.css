@@ -1,0 +1,55 @@
+.produtosContainer {
+    min-height: 100vh;
+    background-image: url('../../../public//assets/tesouras.jpg') ;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.produtosContainer section {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 5rem;
+}
+
+.card {
+    margin-bottom: 1.8rem;
+}
+
+
+ .produtosContainer section div:hover {
+    transform: scale(1.01);
+}
+
+
+@media (max-width: 415px) {
+    .produtosContainer section div {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem auto;
+    }
+
+    .produtosContainer .card .cardHeader {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .produtosContainer .card .cardFavorite {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 15px;
+
+    }
+    
+}
